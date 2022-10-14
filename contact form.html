@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="Styles.css" />
+  </head>
+  <body>
+    <form action="mailto:duttarjit525@gmail.com">
+      <h1>Payment Form</h1>
+      <h1>Contact Information</h1>
+      <p>Name:*<input type="text" name="name" required /></p>
+      <fieldset>
+        <legend>Gender *</legend>
+        <p>
+          Male<input type="radio" name="Gender" id="male" required />
+          Female<input type="radio" name="Gender" id="female" required />
+        </p>
+      </fieldset>
+      <p>
+        Adress:
+        <textarea name="address" id="address" cols="1000" rows="8"></textarea>
+      </p>
+      <p>Email:* <input type="email" name="email" id="email" required /></p>
+      <p>Pincode: <input type="number" name="pincode" id="pincode" /></p>
+      <hr />
+      <h1>Payment Information</h1>
+      <p>
+        Card Type:*
+        <select name="card_type" id="card_type" required>
+          <option value="">__select a card type__</option>
+          <option value="visa">Visa</option>
+          <option value="rupay">rupay</option>
+          <option value="mastercard">mastercard</option>
+        </select>
+      </p>
+      <p>
+        card number:*
+        <input type="number" name="card_number" id="card_number" required />
+      </p>
+      <p>
+        Expiration Date:*
+        <input type="date" name="exp_date" id="exp_date" required />
+      </p>
+      <p>CVV *<input type="password" name="cvv" id="cvv" required /></p>
+      <input type="submit" value="pay now" />
+    </form>
+    <a
+      href="/html/project/preview-card/landing-page-huddle/Landing-page-Huddle/index.html"
+      ><h2>Back</h2>
+    </a>
+  </body>
+</html>
